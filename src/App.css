@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-input-placeholder {
+  font-family: Inter;
+  font-size: 1rem;
+  letter-spacing: -0.05em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.form-container {
+  width: 20rem;
+}
+
+form {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: -0.05em;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px black solid;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+.textarea {
+  display: block;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  letter-spacing: -0.05em;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px black solid;
+  width: 100%;
+  height: 5rem;
+}
+
+.submit-button {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  padding: 0.5rem 0.7rem;
+  margin-top: 1rem;
   color: white;
+  background-color: darkmagenta;
+  border: none;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.submitted-details p {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitted-details {
+  width: 30rem;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
 }
